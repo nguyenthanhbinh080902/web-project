@@ -8,6 +8,7 @@
         if($count > 0){
             $row_data = mysqli_fetch_array($row);
             $_SESSION['dangky'] = $row_data['tenkhachhang'];
+            $_SESSION['id_khachhang'] = $row_data['id_dangky'];
             header("Location:index.php?quanly=giohang");
         }else{
             echo '<p style="color: red; ">Mật khẩu hoặc Email sai vui lòng nhập lại.</p>';
@@ -22,11 +23,11 @@
         </tr>
         <tr>
             <td>Tài khoản</td>
-            <td><input type="text" name="email" placeholder="Email..."></td>
+            <td><input size="50" type="text" name="email" placeholder="Email..."></td>
         </tr>
         <tr>
             <td>Mật khẩu</td>
-            <td><input type="password" name="password" placeholder="Mật khẩu..."></td>
+            <td><input size="50" type="password" name="password" placeholder="Mật khẩu..."></td>
         </tr>
         <tr>
             <td colspan="2"><input type="submit" name="dangnhap" value="Đăng nhập"></td>

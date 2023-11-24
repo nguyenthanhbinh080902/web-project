@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include('../../admincp/config/config.php');
     // them so luong
     if(isset($_GET['cong'])){

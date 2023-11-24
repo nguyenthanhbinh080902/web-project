@@ -4,6 +4,7 @@
     <?php
     if(isset($_SESSION['dangky'])){
         echo 'xin chào '.'<span style="color: red;">'.$_SESSION['dangky'].'</span>';
+        echo $_SESSION['id_khachhang'];
     }
     ?>
 </p>
@@ -54,7 +55,7 @@
                 <?php 
                     if(isset($_SESSION['dangky'])){
                 ?>
-                <p><a hred="index.php?quanly=thanhtoan">Đặt hàng</a></p>
+                <p><a href="pages/main/thanhtoan.php">Đặt hàng</a></p>
                 <?php
                     }else{
                 ?>
