@@ -14,6 +14,7 @@
             session_start();
             include("admincp/config/config.php");
             include("pages/header.php");
+            include("personal.php");
             include("pages/menu.php");
             include("pages/main.php");
             include("pages/footer.php");
