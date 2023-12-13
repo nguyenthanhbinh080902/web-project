@@ -17,7 +17,7 @@
             include("modules/quanlysp/them.php");
             include("modules/quanlysp/lietke.php");
         }elseif ($tam == 'quanlysp' && $query == 'sua'){
-            //include("modules/quanlysp/sua.php");
+            include("modules/quanlysp/sua.php");
         }else{
             include("modules/dashboard.php");
         }

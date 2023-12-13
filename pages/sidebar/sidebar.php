@@ -1,11 +1,13 @@
 <div class="sidebar">
     <ul class="list_sidebar">
-        <li><a href="#">Ốp lưng</a></li>
-        <li><a href="#">Tai nghe</a></li>
-        <li><a href="#">Cục sạc</a></li>
-        <li><a href="#">Gậy tự sướng</a></li>
-        <li><a href="#">Lót bàn phím</a></li>
-        <li><a href="#">Ốp tai nghe</a></li>
-        <li><a href="#">Tay cầm</a></li>
+        <?php
+            $sql_category = "SELECT * FROM tbl_danhmuc ORDER BY id_danhmuc DESC";
+            $query_category = mysqli_query($mysqli, $sql_category);
+            while ($row_category = mysqli_fetch_array($query_category)) {
+        ?>
+        <li><a href="index.php?quanly=danhmucsanpham&id=<?php echo $row_category['id_danhmuc'] ?>"><?php echo $row_category['tendanhmuc'] ?></a></li>
+        <?php
+            }
+        ?>
     </ul>
 </div>

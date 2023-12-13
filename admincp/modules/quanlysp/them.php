@@ -31,7 +31,12 @@
         </tr>
         <tr>
             <td>Tình trạng</td>
-            <td><input type="text" name="tinhtrang"></td>
+            <td>
+                <select name="tinhtrang" id="">
+                    <option value="1" selected>Kích hoạt</option>
+                    <option value="0">Ẩn</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td>Danh mục</td>
