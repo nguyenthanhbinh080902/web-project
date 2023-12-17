@@ -31,13 +31,15 @@
         <td><?php echo $row['tendanhmuc'] ?></td>
         <td><?php echo $row['masp'] ?></td>
         <td><?php echo $row['tomtat'] ?></td>
-        <td><?php if ($row['tinhtrang'] == 1){
-            echo 'Kích hoạt';
-        }
-        else {
-            echo 'Ẩn';
-        } ?></td>
-
+        <td>
+            <?php if ($row['tinhtrang'] == 1){
+                echo 'Kích hoạt';
+            }
+            else {
+                echo 'Ẩn';
+            } 
+            ?>
+        </td>
         <td>
             <a href="modules/quanlysp/xuly.php?idsanpham=<?php echo $row['id_sanpham'] ?>">Xóa</a> | 
             <a href="?action=quanlysp&query=sua&idsanpham=<?php echo $row['id_sanpham'] ?>">Sửa</a>

@@ -8,7 +8,6 @@
     WHERE tbl_danhmuc.id_danhmuc = '$_GET[id]' LIMIT 1 ";
     $query_category = mysqli_query($mysqli, $sql_category);
     $row_tittle = mysqli_fetch_array($query_category);
-
 ?>
 <h3>Danh mục sản phẩm :<?php echo $row_tittle['tendanhmuc'] ?></h3>
     <?php

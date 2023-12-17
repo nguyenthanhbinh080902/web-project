@@ -30,7 +30,12 @@
             <td><input size="50" type="password" name="password" placeholder="Mật khẩu..."></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="submit" name="dangnhap" value="Đăng nhập"></td>
+            <td><input type="submit" name="dangnhap" value="Đăng nhập"></td>
+            <td>
+                <a href="index.php?quanly=doimatkhau" style="float: right">
+                    <input type="button" name="doimatkhau" value="Đổi mật khẩu">
+                </a>
+            </td>
         </tr>
     </table>
 </form>

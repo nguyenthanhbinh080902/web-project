@@ -30,6 +30,7 @@
         <?php
         }
         ?>
+        <!-- <li><a href="index.php?quanly=doimatkhau">Đổi mật khẩu</a></li> -->
         <li><a href="index.php?quanly=tintuc">Tin tức</a></li>
         <li><a href="index.php?quanly=lienhe">Liên hệ</a></li>
         <li><a href="admincp/index.php">Admin</a></li>

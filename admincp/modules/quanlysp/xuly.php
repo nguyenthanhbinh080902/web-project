@@ -22,12 +22,12 @@
         header('Location: ../../index.php?action=quanlysp&query=them');
     }elseif (isset($_POST['suasanpham'])){
 
-        if ($hinhanh != ''){
+        if (!empty($_FILES['hinhanh']['name'])){
             move_uploaded_file($hinhanh_tmp, 'uploads/'.$hinhanh);
             $sql_update = "UPDATE tbl_sanpham SET tensanpham = '$tensanpham', masp = '$masp', giasp = '$giasp',
             hinhanh = '$hinhanh', soluong = '$soluong', tomtat = '$tomtat', noidung = '$noidung', tinhtrang = '$tinhtrang',
             id_danhmuc = '$danhmuc'
-            WHERE id_sanpham = '$_GET[idsanpham]' ";
+            WHERE id = '$_GET[idsanpham]' ";
             // xoa hinh anh cu
             $sql = "SELECT * FROM tbl_sanpham WHERE id_sanpham = '$_GET[idsanpham]' LIMIT 1 ";
             $query = mysqli_query($mysqli, $sql);

@@ -18,6 +18,20 @@
             include("modules/quanlysp/lietke.php");
         }elseif ($tam == 'quanlysp' && $query == 'sua'){
             include("modules/quanlysp/sua.php");
+        }elseif ($tam == 'quanlydanhmucbaiviet' && $query == 'them'){
+            include("modules/quanlydanhmucbaiviet/them.php");
+            include("modules/quanlydanhmucbaiviet/lietke.php");
+        }elseif ($tam == 'quanlydanhmucbaiviet' && $query == 'sua'){
+            include("modules/quanlydanhmucbaiviet/sua.php");
+        }elseif ($tam == 'quanlybaiviet' && $query == 'them'){
+            include("modules/quanlybaiviet/them.php");
+            include("modules/quanlybaiviet/lietke.php");
+        }elseif ($tam == 'quanlybaiviet' && $query == 'sua'){
+            include("modules/quanlybaiviet/sua.php");
+        }elseif ($tam == 'quanlydonhang' && $query == 'lietke'){
+            include("modules/quanlydonhang/lietke.php");
+        }elseif ($tam == 'quanlydonhang' && $query == 'xemdonhang'){
+            include("modules/quanlydonhang/xemdonhang.php");
         }else{
             include("modules/dashboard.php");
         }
